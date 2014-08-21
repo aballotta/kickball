@@ -1,0 +1,8 @@
+<h1>Players</h1>
+
+<ol>
+  <% @players.each do |player| %>
+    <li><%= player['last_name'] %>, <%= player['first_name'] %></li>
+
+  <% end %>
+</ol>

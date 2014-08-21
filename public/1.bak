@@ -1,0 +1,30 @@
+# view the professional teams
+# navigate to a distinct url and web page for each team
+# Each team page displays the team's name
+# Each team page displays each player's name along with their position
+# then see all players in a certain position
+# navigate to a distinct url for each position
+# Each position page displays the position
+# Each position page lists each player in that position along with their team name
+
+# first_name  last_name  position  team (columns in csv file)
+
+
+require 'sinatra'
+require 'sinatra/reloader'
+require 'csv'
+
+
+CSV.foreach('lackp_starting_roster.csv', headers: true) do |row|
+
+# header
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Kickball Starting Rosters</title>
+
+    <link rel="stylesheet" href="app.css">
+  </head>
+
